@@ -18,7 +18,7 @@ A simple Student Information Web App built to practice a collaborative Git workf
 - `feature/ui` - UI improvements
 - `feature/javascript` - JavaScript functionality
 - `feature/contact` - contact information section
-- `feature/student-name` - heading update
+- `feature/nayana` - heading update
 - `feature/app-title` - title update
 
 All feature branches were merged into `main` via Pull Requests after review.
@@ -27,15 +27,19 @@ All feature branches were merged into `main` via Pull Requests after review.
 - feature/ui -> main
 - feature/javascript -> main
 - feature/contact -> main
-- feature/student-name -> main
+- feature/nayana -> main
 - feature/app-title -> main
 
 ## Merge Conflict
 **What caused the conflict?**
-`feature/student-name` and `feature/app-title` were both created from the same version of `main` and both modified the same `<h1>` heading line in `index.html` with different text.
+`feature/nayana` and `feature/app-title` were both created from the same version of `main` and both modified the same `<title>` line in `index.html` with different text.
 
 **How was it resolved?**
-After merging `main` into `feature/app-title`, the conflict markers were reviewed and the two changes were combined into a single heading, then committed and pushed.
+After merging `main` into `feature/app-title`, the conflict markers were reviewed and the two changes were combined into a single title, then committed and pushed.
+
+![Conflict banner on the PR](docs/conflict.png)
+![Conflict markers before resolution](docs/resolved.png)
+![Successful merge](docs/merged-pr.png)
 
 ## How to Run the Application
 1. Clone the repository.

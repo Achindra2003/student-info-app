@@ -1,9 +1,9 @@
 # Student Information System
 
 ## Team Members
-- Student 1 - Team Lead / Developer
-- Student 2 - UI Developer
-- Student 3 - JavaScript Developer
+- Achindra - Team Lead / Developer
+- Nayana Benny - UI Developer
+- Joshua Joby - JavaScript Developer
 
 ## Project Description
 A simple Student Information Web App built to practice a collaborative Git workflow (branching, pull requests, and merge conflict resolution).

@@ -46,7 +46,7 @@ After merging `main` into `feature/app-title`, the conflict markers were reviewe
 2. Open `index.html` in a web browser.
 
 ## Beyond the Brief
-After the base exercise was complete, the lead added branch protection on
-`main`, a CI lint pipeline, and a `CODEOWNERS` file — all doable solo, with
-no further action needed from Student 2 or Student 3. Details and rationale
-in [`docs/SELF_LEARNING.md`](docs/SELF_LEARNING.md).
+After the base exercise was complete, the team added branch protection on
+`main`, a CI lint pipeline, and a `CODEOWNERS` file — repository-config
+changes rather than more app code, so they didn't create extra work for
+anyone. Details and rationale in [`docs/SELF_LEARNING.md`](docs/SELF_LEARNING.md).

@@ -1,0 +1,14 @@
+# Maps each part of the app to the team member responsible for it.
+# GitHub auto-suggests these people as reviewers on a matching PR.
+# Branch protection does NOT require their approval (see docs/SELF_LEARNING.md) —
+# this file documents ownership, it doesn't gate merges.
+
+/style.css   @Nayanabenny
+/script.js   @joshuajoby
+
+# index.html was touched by all three roles (UI card, contact block, JS button,
+# heading/title) over the course of the exercise, so ownership is shared.
+/index.html  @Achindra2003 @Nayanabenny @joshuajoby
+
+/README.md   @Achindra2003
+/.github/    @Achindra2003

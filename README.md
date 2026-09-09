@@ -44,3 +44,9 @@ After merging `main` into `feature/app-title`, the conflict markers were reviewe
 ## How to Run the Application
 1. Clone the repository.
 2. Open `index.html` in a web browser.
+
+## Beyond the Brief
+After the base exercise was complete, the lead added branch protection on
+`main`, a CI lint pipeline, and a `CODEOWNERS` file — all doable solo, with
+no further action needed from Student 2 or Student 3. Details and rationale
+in [`docs/SELF_LEARNING.md`](docs/SELF_LEARNING.md).

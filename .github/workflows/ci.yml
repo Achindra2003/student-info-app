@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate HTML
+        run: npx --yes html-validate@8 index.html
+
+      - name: Lint CSS
+        run: npx --yes stylelint@16 --config .stylelintrc.json style.css
+
+      - name: Check JS syntax
+        run: node --check script.js

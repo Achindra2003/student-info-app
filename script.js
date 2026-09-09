@@ -1,1 +1,9 @@
-// JavaScript functionality will be added by Student 3
+const dateElement = document.querySelector("#current-date");
+
+if (dateElement) {
+  dateElement.textContent = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric"
+  }).format(new Date());
+}

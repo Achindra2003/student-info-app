@@ -2,10 +2,10 @@
 
 The base exercise (branching, PRs, one deliberate merge conflict, README) is
 complete — see the main `README.md` and the branch/PR history on GitHub. This
-document covers three additions the team lead made afterward, done solo so
-Student 2 and Student 3 didn't need to take any further action. Each one
-extends a learning objective the lab already named, rather than adding new
-app features.
+document covers three additions the team made afterward. Each one extends a
+learning objective the lab already named, rather than adding new app
+features, and each is a repository-config change rather than more app code —
+so setting them up didn't create extra work for anyone.
 
 ## 1. Branch protection on `main`
 
@@ -22,10 +22,10 @@ instead:
   with a protected-branch error; the only way changes land is through a PR.
 - **Require status checks to pass** (see the CI section below) — a PR can't
   be merged while the lint job is red.
-- Required approving review count is set to **0** deliberately, so this
-  doesn't require Student 2 or Student 3 to click anything going forward —
-  the goal here was learning what branch protection *enforces mechanically*,
-  not adding a review-approval step that needs other people's time.
+- The required approving-review count is set to **0** deliberately — the
+  point was to see what branch protection *enforces mechanically* (the PR
+  requirement, the status check) layered on top of the review habit the team
+  already had, not to add a second formal approval step.
 
 Configured via `gh api repos/Achindra2003/student-info-app/branches/main/protection`
 rather than a UI click-through, so the exact rule set is reviewable in this
@@ -64,19 +64,18 @@ config — the point of adding a linter was to act on what it finds.
 JS developer, and `index.html` to all three (since every role's branch
 touched it at some point — UI card, contact block, Show Details button,
 heading, title). This makes GitHub auto-suggest the right reviewer on a
-future PR that touches a given file. It is **not** wired into branch
-protection as a required check — adding it doesn't obligate Student 2 or
-Student 3 to review anything; it's documentation of ownership that becomes
-useful review-routing if the project continues.
+future PR that touches a given file. It isn't wired into branch protection as
+a required check, so for now it's documentation of ownership rather than an
+enforced review step — useful review-routing if the project continues.
 
 ## Why these three and not others
 
 Two other candidates were considered and deliberately left out:
 
 - **A second conflict resolved via `git merge` vs `git rebase`** — genuinely
-  useful, but it requires a second live conflict scenario involving two
-  branches, which pulls Student 2/3 back into the exercise. Skipped to keep
-  this solo.
+  useful, but it means opening a second live conflict scenario across two
+  branches after the exercise had already wrapped up, rather than a
+  self-contained config change. Left for a follow-up round instead.
 - **A release tag (`v1.0.0`) + changelog** — a legitimate adjacent Git skill,
   but it doesn't extend anything the lab's learning objectives actually ask
   for, so it would have been added just to add something.

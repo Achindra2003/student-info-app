@@ -384,6 +384,11 @@ h1 {
   line-height: 1.4;
 }
 
+.info-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .info-number {
   color: #b1b8c8;
   font-family: "Manrope", sans-serif;
